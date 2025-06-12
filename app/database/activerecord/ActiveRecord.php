@@ -2,9 +2,11 @@
 
 namespace app\database\activerecord;
 
+use app\database\interfaces\ActiveRecordInterface;
+use app\database\interfaces\UpdateInterface;
 use ReflectionClass;
 
-abstract class ActiveRecord
+abstract class ActiveRecord implements ActiveRecordInterface
 {
   protected $table = null;
   protected $attribute = [];
@@ -36,5 +38,31 @@ abstract class ActiveRecord
     return $this->attribute[$attribute];
   } //? __get
 
+  public function update(UpdateInterface $updateInterface)
+  {
+    return $updateInterface->update();
+  } //? update
+
+
+  // public function insert()
+  // {
+  //   throw new \Exception("Method not implemented.");
+  // } //? insert
+  // public function delete()
+  // {
+  //   throw new \Exception("Method not implemented.");
+  // } //? delete
+  // public function find()
+  // {
+  //   throw new \Exception("Method not implemented.");
+  // } //? find
+  // public function findBy()
+  // {
+  //   throw new \Exception("Method not implemented.");
+  // } //? findBy
+  // public function all()
+  // {
+  //   throw new \Exception("Method not implemented.");
+  // } //? all
 
 }//! ActiveRecord
