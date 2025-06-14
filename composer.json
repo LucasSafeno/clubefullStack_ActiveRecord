@@ -2,7 +2,7 @@
   "name": "safeno/clubefull-stack_active-record",
   "autoload": {
     "psr-4": {
-      "appd\\": "app/"
+      "app\\": "app/"
     }
   },
   "authors": [
@@ -11,5 +11,7 @@
       "email": "lugnorio@gmail.com"
     }
   ],
-  "require": {}
+  "require": {
+    "symfony/var-dumper": "^7.3"
+  }
 }
