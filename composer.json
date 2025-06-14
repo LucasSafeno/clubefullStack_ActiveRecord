@@ -2,7 +2,7 @@
   "name": "safeno/clubefull-stack_active-record",
   "autoload": {
     "psr-4": {
-      "app\\": "app/"
+      "appd\\": "app/"
     }
   },
   "authors": [
