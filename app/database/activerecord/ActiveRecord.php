@@ -38,7 +38,11 @@ abstract class ActiveRecord implements ActiveRecordInterface
 
   public function update(UpdateInterface $updateInterface)
   {
-    return $updateInterface->update();
+    // if ($this instanceof ActiveRecordInterface) {
+    //   var_dump('is instance');
+    // }
+    // var_dump($this);
+    return $updateInterface->update($this);
   } //? update()
 
 }//* ActiveRecord

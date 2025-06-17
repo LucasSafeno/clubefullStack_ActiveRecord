@@ -10,4 +10,4 @@ $user->firstName = 'Lucas';
 $user->lastName = 'Tenório';
 $user->id = 1;
 
-$user->update(new UpdateUser);
+$user->update(new Update);

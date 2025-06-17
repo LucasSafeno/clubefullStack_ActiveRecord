@@ -9,4 +9,6 @@ interface ActiveRecordInterface
   // public function delete();
   // public function find();
   // public function findBy();
+  public function getTable();
+  public function getAttributes();
 }
